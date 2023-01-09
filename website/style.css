@@ -1,0 +1,161 @@
+header{
+    display:inline-block;
+    text-align: center;
+    position:absolute;
+    top:-10px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(to right, #bdc3c7,#2c3e50)
+}
+
+main{
+    padding-top: 6em;
+}
+
+#zip{
+    height:30px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    background-color: #36454F;
+    color: white;
+    
+}
+
+#feelings{
+    width: 300px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    background-color: #36454F;
+    color: white;
+}
+
+
+body{
+    background-image: url('images/Clouds.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+h1{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #0e3742;
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 7s linear infinite;
+    
+}
+
+.TH{
+    position: relative;
+    top:-15px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#generate{
+    position: relative;
+    top:20px;
+    background:linear-gradient(to left,#2193b0,#6dd5ed,#2193b0);
+    color:white;
+    border:outset 6px;
+    border-right-color:#2193b0 ;
+    border-left-color:#6dd5ed;
+    border-top-color:#2193b0 ;
+    border-bottom-color:#6dd5ed ;
+    font-family: 'Noto Sans';
+    border-radius:7px;
+    width:150px;
+    height:50px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    background-size:200%;
+
+}
+
+#generate:hover{
+    background-position: right;
+    border-width:0px;
+    cursor:pointer;
+    color: black;
+
+    text-shadow: 0px -1.2px white  ;
+}
+
+#container{
+    font-size: 1.8em;
+    color:white;
+    padding-top: 2em;
+}
+
+#entryHolder{
+ 
+    position: relative;
+    padding: 2em;
+    top:30px;
+    height: 140px;
+    margin: auto;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5) ;
+    color:lightskyblue;
+    font-size:18px;
+
+}
+
+#date{
+    letter-spacing: 2px;
+}
+
+
+@keyframes animate{
+	0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+		color: #0e3742;
+		text-shadow: none;
+	}
+	18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+		color: #fff;
+		text-shadow: 0 0 10px #03bcf4,
+		            0 0 20px #03bcf4,
+		            0 0 40px #03bcf4,
+		            0 0 80px #03bcf4,
+		            0 0 160px #03bcf4;
+
+	}
+}
+
+@media (max-width:280px)
+{
+    h1{
+        font-size:1.6em;
+        color:red;
+    }
+
+    #feelings{
+        width: 100%;
+    }
+    #zip{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:281) and (max-width:330px){
+    h1{
+        font-size: 1.8em;
+
+    }
+}
+
+
+
+@media (min-width:321px) and (max-width:412px){
+    h1{
+        font-size: 2em;
+
+    }
+}
